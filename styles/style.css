@@ -1,6 +1,5 @@
-* {
-    padding: 0;
-    margin: 0;
+body {
+    overflow-x: hidden;
 }
 
 main {
@@ -11,16 +10,19 @@ main {
     top: 0;
 }
 
+main:hover {
+    cursor: pointer;
+}
+
 .main-page {
-    /* background-color: blueviolet; */
-    background-image: linear-gradient(rgb(78, 78, 78), gray);
+    background-image: linear-gradient(rgb(104, 100, 100), rgb(48, 47, 47));
     width: 75%;
-    height: 35px;
+    height: 40px;
     position: absolute;
     margin: 75px 140px 200px 140px;
     border: 1px solid gray;
     border-radius: 5px;
-    padding: 5px 10px;
+    padding: 6px 10px;
     box-sizing: border-box;
 }
 
@@ -30,12 +32,48 @@ nav {
     text-align: center;
 }
 
-nav img {
-    width: 20px;
+.first-child:hover,
+.second-child:hover,
+.third-child:hover,
+.fourth-child:hover,
+.fifth-child:hover, 
+.sixth-child:hover, 
+.seventh-child:hover, 
+.eighth-child:hover {
+    background-color: rgb(77, 75, 75);
+    background-image: radial-gradient(rgb(41, 39, 39) 70%, rgb(54, 53, 53)30%);
+    width: 40px;
+    height: 20px;
+    padding-right: 7px;
+    margin-right: 3px;
 }
 
+nav img {
+    width: 25px;
+    height: 20px;
+}
+
+nav a {
+    border-right: 1px solid rgb(44, 43, 43);
+    padding-right: 33px;
+    padding-top: none;
+    font: 14px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.btn {
+    color: white;
+    background-color: gray;
+    border: none;
+    border-radius: 10px;
+}
 .search {
-    width: 35px;
+    background-color:gray;
+    width: 80px;
+    border: none;
+    border-radius: 10px;
+    transition: all .5s ease;
 }
 
 .page-heading {
@@ -46,10 +84,38 @@ nav img {
     margin-top: 70px;
 }
 
+.page-heading a {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+    color: whitesmoke;
+    line-height: 30px;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 55px;
+    padding-bottom: 20px;
+}
+
+h2 {
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
 .page-heading img {
     width: 30px;
     float: right;
     top: 0;
+}
+
+.play-btn {
+    position: absolute;
+    width: 30px;
+    left: 745px;
+    top: 270px;
 }
 
 .iPhone-images {
@@ -59,22 +125,39 @@ nav img {
 
 .iPhone-images img {
     border: 1px solid whitesmoke;
-    /* margin-top: 500px; */
 }
 
 .footer-top {
     display: flex;
     justify-content: space-around;
-    padding: 4.5px 85px;
+    margin: 5px 0;
+    padding: 0 80px;
     font-size: x-small;
 }
 
-/* .footer-top span {
-    font-size: x-small;
-} */
+.footer-top a,
+.footer-bottom a {
+    text-decoration: none;
+    color: #08c;
+}
+
+.footer-top a:hover,
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+.footer-top img {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    padding-left: 5px;
+}
+
+.footer-top img:hover {
+    cursor: pointer;
+}
 
 .footer-bottom {
     font-size: x-small;
-    margin-left: 150px;
-    padding: 3px 0;
+    margin: 7px 0 5px 185px;
 }
