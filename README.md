@@ -19,7 +19,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/jamezjaz/apple-web-page/98c166da02ff7dbf860f2300b84ff3333f2e096b/index.html) hosted on [githack](https://raw.githack.com)
+[Live Demo Link](https://rawcdn.githack.com/jamezjaz/apple-web-page/a7f5ebc697bdabdde171768b9537255602df459c/index.html) hosted on [githack](https://raw.githack.com)
 
 
 ## CDNs
